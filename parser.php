@@ -53,6 +53,6 @@ foreach ($saArr as $key => $value) {
 
 $result = json_encode($saObj, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 
-file_put_contents( $file, $result );
+file_put_contents($file, $result);
 
 die();
