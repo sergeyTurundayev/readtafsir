@@ -31,7 +31,7 @@ $mainUrl = 'https://read.tafsir.one/get.php?uth&src=almukhtasar';
 
 $saObj = [];
 
-for ($i=0; $i < count( $saArr ); $i++) {
+for ($i=0; $i < count($saArr); $i++) {
 
     $surah = $saArr[$i][0];
 
