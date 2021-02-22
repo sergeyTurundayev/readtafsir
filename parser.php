@@ -55,7 +55,7 @@ for ($i=0; $i < count( $saArr ); $i++) {
 
     // echo $surah . ': ' . $fromAyah . '-' . $toAyah . PHP_EOL;
 
-    $saObj[$surah][] = ['from:' => $fromAyah, 'to:' => $toAyah, 'text:' => $pageJsonData];
+    $saObj[$surah][] = ['from' => $fromAyah, 'to' => $toAyah, 'text' => $pageJsonData];
 }
 
 $result = json_encode($saObj, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
