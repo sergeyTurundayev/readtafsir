@@ -31,12 +31,10 @@ $mainUrl = 'https://read.tafsir.one/get.php?uth&src=almukhtasar';
 
 $saObj = [];
 
-for ($i=0; $i < count($saArr); $i++) {
+for ($i = 0; $i < count($saArr); $i++) {
 
     $surah = $saArr[$i][0];
-
-    $fromAyah =  1*$saArr[$i][1];
-
+    $fromAyah = 1 * $saArr[$i][1];
     $pageUrl = $mainUrl . '&s=' . $surah . '&a=' . $fromAyah;
 
     $page = file_get_contents($pageUrl);
